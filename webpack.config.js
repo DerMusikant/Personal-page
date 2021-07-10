@@ -1,7 +1,7 @@
 const
 path = require('path'),
-HtmlWebpackPlugin = require('html-webpack-plugin'),
-MiniCssExtractPlugin = require('mini-css-extract-plugin')
+MiniCssExtractPlugin = require('mini-css-extract-plugin'),
+CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js',
@@ -19,7 +19,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react']
+            presets: ['@babel/preset-react', '@babel/preset-env']
           }
         }
       },
@@ -28,17 +28,19 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader'
+          'css-loader',
+          'postcss-loader'
         ]
       }
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-      filename: 'index.html'
-    }),
-    new MiniCssExtractPlugin()
+    new MiniCssExtractPlugin(),
+    new CopyPlugin({
+      patterns: [
+        { from: path.resolve(__dirname, 'src/index.html')}
+      ]
+    })
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
