@@ -2,23 +2,24 @@ import React, {Suspense} from 'react'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import ReactDOM from 'react-dom'
 
-import Home from './pages/Home'
-import About from './pages/About'
-import NotFound from './pages/NotFound'
+import Layout from './components/Layout'
 
-const Layout = React.lazy(()=>import('./components/Layout'))
+const
+Home = React.lazy(()=>import('./pages/Home')),
+About = React.lazy(()=>import('./pages/About')),
+NotFound = React.lazy(()=>import('./pages/NotFound'))
 
 ReactDOM.render(
   <Router>
-    <Suspense fallback={<div>Loading...</div>}>
-      <Layout>
+    <Layout>
+      <Suspense fallback={<div>Loading...</div>}>
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
           <Route path='*' component={NotFound} />
         </Switch>
-      </Layout>
-    </Suspense>
+      </Suspense>
+    </Layout>
   </Router>
 
   , document.getElementById('root'))
