@@ -3,5 +3,5 @@
 @import 'tailwindcss/utilities';
 
 .show{
-  display: block
+  display: flex;
 }
