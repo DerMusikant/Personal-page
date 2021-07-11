@@ -45,7 +45,7 @@ export default class Header extends React.Component{
           </div>
 
 
-            <div className='text-center items-center flex-col hidden md:flex md:flex-row' id='navBar'>
+            <div className='text-center mx-2 items-center flex-col hidden md:flex md:flex-row' id='navBar'>
               <Link to='/' className='navBar__item p-3 px-6 w-full border-red-main md:w-auto' onClick={this.handleClick}>Home</Link>
               <Link to='/services' className='navBar__item p-3 px-6 w-full border-red-main md:w-auto' onClick={this.handleClick}>Services</Link>
               <Link to='/about' className='navBar__item p-3 px-6 w-full border-red-main md:w-auto' onClick={this.handleClick}>About</Link>
