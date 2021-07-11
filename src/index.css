@@ -3,7 +3,13 @@
 @import 'tailwindcss/utilities';
 
 :root{
-  --main-red: #e7062b;
+  --red-main: #E7062B;
+  --platinum: #E8E9ED;
+  --purple-main: #1E152A;
+}
+
+html{
+  background-color: var(--platinum);
 }
 
 .show{
@@ -12,7 +18,7 @@
 
 .header{
   box-shadow: 0px 0px 80px -20px black;
-  color: var(--main-red);
+  color: var(--red-main);
 }
 
 .burger div{
@@ -38,23 +44,31 @@
 
 .navBar__item{
   box-shadow: 0px -5px 20px -20px black;
+  transition: all 0.8s ease;
 }
 
 .navBar__item:hover{
-  border-bottom-width: 2px;
+  color: var(--purple-main);
 }
 
 .contact-me{
-  color: black;
-  border-radius: 5rem;
-  background-color: green;
+  color: var(--platinum);
+  background-color: var(--red-main);
+  transition: all 0.3s ease;
 }
 
+.contact-me:hover{
+  transform: scale(1.05)
+}
 
 @media (min-width: 768px) {
 
   .navBar__item {
     box-shadow: none;
+  }
+
+  .contact-me{
+    border-radius: 5rem;
   }
 
 }

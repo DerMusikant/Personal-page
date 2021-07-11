@@ -8,7 +8,11 @@ module.exports = {
     extend: {
       colors:{
         red: {
-          main: '#e7062b'
+          main: '#E7062B'
+        },
+        platinum: '#E8E9ED',
+        purple: {
+          main: '#1E152A'
         }
       }
     },
