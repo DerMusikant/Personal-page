@@ -1,6 +1,11 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
+import Logo from '../assets/icons/dragon-solid.svg'
+import Face from '../assets/icons/Facebook-square-brands.svg'
+import Linked from '../assets/icons/linkedin-brands.svg'
+import Git from '../assets/icons/github-brands.svg'
+
 export default class Header extends React.Component{
 
   handleClick = (e) => {
@@ -11,12 +16,32 @@ export default class Header extends React.Component{
   render(){
     return (
       <header className='header'>
-        <div className='bg-gradient-to-r from-platinum to-red-main h-10'>
-        </div>
-        <div className='header-main bg-platinum relative flex flex-col align-center font-serif md:flex-row md:justify-between shadow'>
 
-          <div  className='m-2'>
-            <Link to='/'>To do:<br /> Logo</Link>
+        <div className='bg-gradient-to-r from-platinum via-red-main to-purple-main flex items-center justify-between'>
+
+          <p className='follow mx-2'>Follow me!</p>
+
+          <div className='flex'>
+            <a className='media' href='https://www.facebook.com/RivettiValentin/'>
+              <Face className='social-media p-2' />
+            </a>
+
+            <a className='media' href='https://www.linkedin.com/in/valentinrivetti/'>
+              <Linked className='social-media p-2' />
+            </a>
+
+            <a className='media' href='https://github.com/DerMusikant'>
+              <Git className='social-media p-2' />
+            </a>
+
+          </div>
+        </div>
+
+
+        <div className='header-main bg-platinum relative flex flex-col font-serif md:flex-row md:justify-between'>
+
+          <div className='m-1'>
+            <Link to='/'><div className='flex flex-col items-center w-max'><Logo className='dragon' /><p>Draco: Web Solutions</p></div></Link>
           </div>
 
 
@@ -27,10 +52,10 @@ export default class Header extends React.Component{
               <Link to='/FAQ' className='navBar__item p-3 px-6 w-full border-red-main md:w-auto' onClick={this.handleClick}>Frequent Questions</Link>
               <Link to='/contact' className='contact-me p-3 w-full md:w-auto' onClick={this.handleClick}>Contact Me!</Link>
             </div>
-            <div id='burger' className='h-10 w-10 burger absolute flex flex-col justify-around right-0 top-0 m-3 md:hidden' onClick={this.handleClick}>
-              <div className='bg-black border-2 border-black rounded-full'></div>
-              <div className='bg-black border-2 border-black rounded-full'></div>
-              <div className='bg-black border-2 border-black rounded-full'></div>
+            <div id='burger' className='h-10 w-10 burger absolute flex flex-col justify-around right-0 mx-3 md:hidden' onClick={this.handleClick}>
+              <div className='bg-black border-2 border-purple-main rounded-full'></div>
+              <div className='bg-black border-2 border-purple-main rounded-full'></div>
+              <div className='bg-black border-2 border-purple-main rounded-full'></div>
             </div>
 
         </div>

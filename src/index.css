@@ -21,6 +21,33 @@ html{
   color: var(--red-main);
 }
 
+.follow{
+  font-family: serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--purple-main);
+}
+
+.media{
+  display: contents;
+}
+
+.social-media{
+  width: 50px;
+  height: 50px;
+  color: var(--platinum);
+}
+
+.dragon{
+  height: 50px;
+  width: 50px;
+  color: var(--red-main)
+}
+
+.burger{
+  top: 21px;
+}
+
 .burger div{
   transition: all 0.2s ease;
   transform-origin: 0 0;
