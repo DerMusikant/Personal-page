@@ -81,7 +81,7 @@ html{
 .contact-me{
   color: var(--platinum);
   background-color: var(--red-main);
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .contact-me:hover{
