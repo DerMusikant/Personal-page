@@ -10,7 +10,24 @@
   display: flex;
 }
 
-.header-main{
+.header{
   box-shadow: 0px 0px 80px -20px black;
   color: var(--main-red);
+}
+
+.navBar__item{
+  box-shadow: 0px 10px 20px -20px black;
+}
+
+.navBar__item:hover{
+  border-bottom-width: 2px;
+}
+
+
+@media (min-width: 768px) {
+
+  .navBar__item {
+    box-shadow: none;
+  }
+  
 }
