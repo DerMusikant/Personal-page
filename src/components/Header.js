@@ -5,6 +5,7 @@ export default class Header extends React.Component{
 
   handleClick = (e) => {
     document.getElementById('navBar').classList.toggle('show')
+    document.getElementById('burger').classList.toggle('cross')
   }
 
   render(){
@@ -26,10 +27,10 @@ export default class Header extends React.Component{
               <Link to='/FAQ' className='navBar__item p-4 mx-2 w-full border-red-main md:w-auto' onClick={this.handleClick}>Frequent Questions</Link>
               <Link to='/contact' className='navBar__item p-4 mx-2 w-full border-red-main md:w-auto' onClick={this.handleClick}>Contact Me</Link>
             </div>
-            <div className='w-10 absolute right-0 top-0 m-3 md:hidden' onClick={this.handleClick}>
-              <div className='border-b-4 border-black mt-2 rounded-full'></div>
-              <div className='border-b-4 border-black my-2 rounded-full'></div>
-              <div className='border-b-4 border-black mb-2 rounded-full'></div>
+            <div id='burger' className='h-10 w-10 burger absolute flex flex-col justify-around right-0 top-0 m-3 md:hidden' onClick={this.handleClick}>
+              <div className=' border-2 border-black rounded-full'></div>
+              <div className=' border-2 border-black rounded-full'></div>
+              <div className=' border-2 border-black rounded-full'></div>
             </div>
 
         </div>
