@@ -22,41 +22,41 @@ html{
   visibility: hidden;
 }
 
+.plat{
+  color: var(--platinum);
+}
 
-/* ----------------------------- HEADER STYLES -------------------------- */
+.rmain{
+  color: var(--red-main);
+}
+
+.pmain{
+  color: var(--purple-main);
+}
+
+/* ----------------------------- HEADER STYLES START -------------------------- */
 
 
 .header{
   box-shadow: 0px 0px 80px -20px black;
-  color: var(--red-main);
 }
 
 .follow{
   font-family: serif;
   font-weight: bold;
   font-size: 1.5rem;
-  color: var(--purple-main);
-}
-
-.media{
-  display: contents;
 }
 
 .social-media{
   width: 50px;
   height: 50px;
-  color: var(--platinum);
 }
 
 .dragon{
   height: 50px;
   width: 50px;
-  color: var(--red-main)
 }
 
-.plat{
-  color: var(--platinum);
-}
 
 .burger{
   top: 21px;
@@ -85,6 +85,7 @@ html{
 
 .navBar__item{
   transition: all 0.5s ease;
+  box-shadow: 0px -5px 20px -20px black;
 }
 
 .navBar__item:hover{
@@ -93,52 +94,49 @@ html{
 
 
 .contact-me{
-  color: var(--platinum);
-  background-color: var(--red-main);
   transition: all 0.5s ease;
 }
 
 .contact-me:hover{
   transform: scale(1.05);
   color: var(--red-main);
-  background-color: var(--platinum);
   border: 1px solid var(--purple-main)
 }
 
+/* --------------------------HEADER STYLES END------------------------- */
 
-/* ------------------------- BACK TO TOP STYLES ---------------------------- */
+/* ------------------------- BACK TO TOP STYLES START ---------------------------- */
 
 
 .back-to-top{
-  display: inline-block;
-  background-color: #FF9800;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
   transition: background-color .3s,
   opacity .5s, visibility .5s;
   z-index: 1000;
 }
 
-/* ------------------------- FOOTER STYLES ------------------------- */
+/* ---------------------------BACK TO TOP STYLES END------------------- */
+
+/* ------------------------- FOOTER STYLES START ------------------------- */
 
 .useful:hover{
   font-weight: bold;
 }
 
+/* -------------------------FOOTER STYLES END--------------------- */
+
+
+/* ----------------------TABLET MEDIA QUERY START -------------------- */
 
 @media (min-width: 768px) {
 
-  .navBar__item {
-    box-shadow: none;
-  }
+  /* ----------------------------- HEADER STYLES START -------------------------- */
 
   .contact-me{
     border-radius: 5rem;
   }
 
+  /* ----------------------------- HEADER STYLES END -------------------------- */
+
 }
+
+/* -------------------TABLET MEDIA QUERY END------------------------- */

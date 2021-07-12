@@ -8,10 +8,18 @@ import Git from '../assets/icons/github-brands.svg'
 
 
 export default class Footer extends React.Component{
+
+  handleClick(){
+    document.documentElement.scrollTo({top: 0, behavior: 'smooth'})
+  }
+
   render(){
     return (
       <footer className='footer'>
         <div className='flex flex-col items-center justify-evenly bg-gradient-to-r from-red-600 to-red-main md:flex-row'>
+
+          { /* ---------------- FOOTER LOGO START -------------- */ }
+
           <div className='info__logo'>
             <div className='m-2'>
               <Link to='/' className='contents'>
@@ -25,6 +33,11 @@ export default class Footer extends React.Component{
               </Link>
             </div>
           </div>
+
+          { /* ---------------- FOOTER LOGO END-------------- */ }
+
+          { /* ---------------- USEFUL LINKS START -------------- */ }
+
           <div className='flex flex-col items-center'>
            <h3 className='font-bold'>Useful Links:</h3>
             <div className='flex flex-col items-center md:flex-row'>
@@ -35,28 +48,36 @@ export default class Footer extends React.Component{
                 <Link to='/contact' className='useful m-2'>>Contact Me</Link>
             </div>
           </div>
+
+          { /* ---------------- USEFUL LINKS END-------------- */ }
+
+          { /* ---------------- SOCIAL MEDIA START -------------- */ }
+
           <div className='flex flex-col text-center'>
             <p className='font-bold'>Follow me!</p>
             <div className='flex'>
               <a className='media' href='https://www.facebook.com/RivettiValentin/'>
                 <Face className='social-media p-2' />
               </a>
-
               <a className='media' href='https://www.linkedin.com/in/valentinrivetti/'>
                 <Linked className='social-media p-2' />
               </a>
-
               <a className='media' href='https://github.com/DerMusikant'>
                 <Git className='social-media p-2' />
               </a>
-
             </div>
-
           </div>
+
+          { /* ---------------- SOCIAL MEDIA END -------------- */ }
+
         </div>
+
+        { /* ---------------- LEGAL INFO -------------- */ }
+
         <div className='text-center'>
           © Copyright Valentin Rivetti 2021. All Rights Reserved
         </div>
+
       </footer>
     )
   }

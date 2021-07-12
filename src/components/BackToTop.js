@@ -1,30 +1,38 @@
 import React from 'react'
 
+import Top from '../assets/icons/chevron-up-solid.svg'
+
 export default class BackToTop extends React.Component{
+
+  // ----------INTERSECION EVENT TO SHOW BUTTON-----------
 
   handleIntersection = (e) => {
     let btn = document.querySelector('.back-to-top')
     if(e[0].isIntersecting){
-      btn.classList.add('hide');
+      btn.classList.add('hide')
     }else{
-      btn.classList.remove('hide');
+      btn.classList.remove('hide')
     }
   }
+
+  // ---------------CLICK EVENT TO SCROLL TOP ------------
 
   handleClick = () => {
     document.documentElement.scrollTo({top: 0, behavior: 'smooth'})
   }
 
+  // --------------COMPONENT OBSERVER INSTANCE------------------
+
   componentDidMount(){
-    const observer = new IntersectionObserver(this.handleIntersection)
-    observer.observe(document.querySelector('header'))
+    this.observer = new IntersectionObserver(this.handleIntersection)
+    this.observer.observe(document.querySelector('header'), )
   }
 
 
   render(){
     return (
-        <div className='back-to-top hide' onClick={this.handleClick}>
-          <h1>xd</h1>
+        <div className='back-to-top fixed bg-purple-main right-8 bottom-8 w-14 h-14 rounded-full flex justify-center items-center hide' onClick={this.handleClick}>
+          <Top className='w-10 plat'/>
         </div>
     )
   }
