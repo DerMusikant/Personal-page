@@ -40,10 +40,9 @@ export default class Header extends React.Component{
 
         <div className='header-main bg-platinum relative flex flex-col font-serif md:flex-row md:justify-between'>
 
-          <div className='m-1'>
-            <Link to='/'><div className='flex flex-col items-center w-max'><Logo className='dragon' /><p>Draco: Web Solutions</p></div></Link>
+          <div className='m-2'>
+            <Link to='/' className='contents'><div className='flex flex-col items-center w-max'><Logo className='dragon' /><p>Draco: Web Solutions</p></div></Link>
           </div>
-
 
             <div className='text-center mx-2 items-center flex-col hidden md:flex md:flex-row' id='navBar'>
               <Link to='/' className='navBar__item p-3 px-6 w-full border-red-main md:w-auto' onClick={this.handleClick}>Home</Link>
