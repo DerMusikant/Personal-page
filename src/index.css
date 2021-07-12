@@ -9,12 +9,17 @@
 }
 
 html{
+  color: var(--purple-main);
   background-color: var(--platinum);
 }
 
 .show{
   display: flex;
 }
+
+
+/* HEADER STYLES */
+
 
 .header{
   box-shadow: 0px 0px 80px -20px black;
@@ -42,6 +47,10 @@ html{
   height: 50px;
   width: 50px;
   color: var(--red-main)
+}
+
+.plat{
+  color: var(--platinum);
 }
 
 .burger{
@@ -89,6 +98,15 @@ html{
   background-color: var(--platinum);
   border: 1px solid var(--purple-main)
 }
+
+
+
+/* FOOTER STYLES */
+
+.useful:hover{
+  font-weight: bold;
+}
+
 
 @media (min-width: 768px) {
 
