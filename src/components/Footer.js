@@ -16,14 +16,14 @@ export default class Footer extends React.Component{
   render(){
     return (
       <footer className='footer'>
-        <div className='flex flex-col items-center justify-evenly bg-gradient-to-r from-red-600 to-red-main md:flex-row'>
+        <div className='grid grid-rows-6 justify-center items-center bg-gradient-to-r from-red-600 to-red-main md:grid-cols-2 md:grid-rows-2 xl:flex xl:justify-evenly'>
 
           { /* ---------------- FOOTER LOGO START -------------- */ }
 
-          <div className='info__logo'>
-            <div className='m-2'>
+          <div className='info__logo row-span-2 md:row-span-1'>
+            <div className='m-2 flex justify-center'>
               <Link to='/' className='contents'>
-                <div className='flex flex-col text-center items-center w-max plat md:flex-row'>
+                <div className='flex flex-col text-center items-center justify-center w-max plat md:flex-row'>
                   <div className='m-2'>
                   <Logo className='dragon plat' />
                   <p>Draco</p>
@@ -38,7 +38,7 @@ export default class Footer extends React.Component{
 
           { /* ---------------- USEFUL LINKS START -------------- */ }
 
-          <div className='flex flex-col items-center'>
+          <div className='row-span-3 flex flex-col items-center justify-center md:row-start-2 md:col-span-2 md:row-span-1'>
            <h3 className='font-bold'>Useful Links:</h3>
             <div className='flex flex-col items-center md:flex-row'>
                 <Link to='/' className='useful m-2'>>Home</Link>
@@ -53,7 +53,7 @@ export default class Footer extends React.Component{
 
           { /* ---------------- SOCIAL MEDIA START -------------- */ }
 
-          <div className='flex flex-col text-center'>
+          <div className='flex flex-col text-center items-center'>
             <p className='font-bold'>Follow me!</p>
             <div className='flex'>
               <a className='media' href='https://www.facebook.com/RivettiValentin/'>
