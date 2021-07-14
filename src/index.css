@@ -114,6 +114,10 @@ html{
   z-index: 1000;
 }
 
+.back-to-top:hover{
+  cursor:pointer;
+}
+
 /* ---------------------------BACK TO TOP STYLES END------------------- */
 
 /* ------------------------- FOOTER STYLES START ------------------------- */
