@@ -20,21 +20,21 @@ export default class Home extends React.Component{
     super(props)
     this.state = {
       trans: {
-        fromLeft: 'translate(-100px, 0)',
-        fromRight: 'translate(100px, 0)',
-        fromBot: 'translate(0, 80px)'
+        fromLeft: 'translate(-200px, 0)',
+        fromRight: 'translate(200px, 0)',
+        fromBot: 'translate(0, 200px)'
       }
     }
   }
 
-// ADDS ANIMATED ELEMENTS TO OBSERVATION
+// ADDS ANIMATED ELEMENTS TO OBSERVATION WITH TRANSFORMATION AND TRANSITION
 
   componentDidMount(){
     this.observer = new IntersectionObserver(this.handleIntersection, {threshold: 0.2})
     const blocks = document.querySelectorAll('.anim')
     blocks.forEach( block => {
       block.style.transform = `${this.state.trans.[block.dataset.trans]} scale(0.8)`
-      block.style.transition = `all 0.8s ease ${block.dataset.delay}`
+      block.style.transition = `all 1s ease ${block.dataset.delay || `0s`}`
       this.observer.observe(block)
     })
   }
@@ -42,7 +42,7 @@ export default class Home extends React.Component{
   render(){
     return (
       <main className='flex flex-col justify-center items-center'>
-        <div className='firstBlock anim hide w-10 bg-red-main' data-delay='1s' data-trans='fromBot'>
+        <div className='firstBlock anim hide w-10 bg-red-main'>
         </div>
       </main>
     )

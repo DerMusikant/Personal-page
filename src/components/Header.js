@@ -6,6 +6,7 @@ import Face from '../assets/icons/Facebook-square-brands.svg'
 import Linked from '../assets/icons/linkedin-brands.svg'
 import Git from '../assets/icons/github-brands.svg'
 
+
 export default class Header extends React.Component{
 
   // ----- CLICK EVENT FOR MOBILE MENU --------
