@@ -42,7 +42,6 @@ html{
 }
 
 .follow{
-  font-family: serif;
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -127,6 +126,18 @@ html{
 }
 
 /* -------------------------FOOTER STYLES END--------------------- */
+
+
+/* ------------------------- HOME STYLES START ------------------ */
+
+
+.firstBlock{
+ height: 300px;
+}
+
+
+/* ------------------------- HOME STYLES END ------------------ */
+
 
 
 /* ----------------------TABLET MEDIA QUERY START -------------------- */
