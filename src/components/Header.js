@@ -19,7 +19,6 @@ export default class Header extends React.Component{
   render(){
     return (
       <header className='header'>
-
         { /* ---------------- SOCIAL MEDIA START -------------- */ }
 
         <div className='bg-gradient-to-r from-platinum via-red-main to-purple-main flex items-center justify-between'>

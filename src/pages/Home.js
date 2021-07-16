@@ -1,8 +1,10 @@
 import React from 'react'
 
+import mainDragon from '../assets/img/main-dragon.png'
+
 export default class Home extends React.Component{
 
-// REMOVES HIDING STATE AND ELEMENT'S OBSERVATION
+// REMOVES HIDING CLASS AND ELEMENT'S OBSERVATION
 
   handleIntersection = entries => {
     entries.forEach(entry => {
@@ -42,8 +44,11 @@ export default class Home extends React.Component{
   render(){
     return (
       <main className='flex flex-col justify-center items-center'>
-        <div className='firstBlock anim hide w-10 bg-red-main'>
-        </div>
+        <section className='grid grid-rows-4'>
+          <h3>A Dragon is inside your website</h3>
+          <p>I use the fire of the wise to make it beat your competitors</p>
+          <img alt='' src={mainDragon} />
+        </section>
       </main>
     )
   }
