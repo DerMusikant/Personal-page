@@ -15,7 +15,7 @@ export default class Footer extends React.Component{
 
   render(){
     return (
-      <footer className='footer'>
+      <footer className='font-sans'>
         <div className='grid grid-rows-6 justify-center items-center bg-gradient-to-r from-red-600 to-red-main md:grid-cols-2 md:grid-rows-2 xl:flex xl:justify-evenly'>
 
           { /* ---------------- FOOTER LOGO START -------------- */ }

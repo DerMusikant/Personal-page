@@ -11,6 +11,7 @@
 html{
   color: var(--purple-main);
   background-color: var(--platinum);
+  font-family: serif;
 }
 
 .show{
@@ -131,8 +132,8 @@ html{
 /* ------------------------- HOME STYLES START ------------------ */
 
 
-.firstBlock{
- height: 300px;
+.home-dragon{
+ width: 150px;
 }
 
 

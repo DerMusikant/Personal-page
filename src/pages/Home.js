@@ -1,6 +1,6 @@
 import React from 'react'
 
-import mainDragon from '../assets/img/main-dragon.png'
+import homeDragon from '../assets/img/red-dragon.png'
 
 export default class Home extends React.Component{
 
@@ -44,11 +44,21 @@ export default class Home extends React.Component{
   render(){
     return (
       <main className='flex flex-col justify-center items-center'>
-        <section className='grid grid-rows-4'>
-          <h3>A Dragon is inside your website</h3>
-          <p>I use the fire of the wise to make it beat your competitors</p>
-          <img alt='' src={mainDragon} />
+        { /* ----------------HOME INTRO START -------------- */ }
+        <section className='block-1 grid grid-rows-5 grid-cols-2 items-center text-center'>
+          <div className='col-span-2'>
+            <h3>A Dragon is inside your website</h3>
+          </div>
+          <div className='col-span-2'>
+            <p>I use the fire of the wise to help your company outstand on the internet realm.<br />
+            Together we can make the best website for your business.</p>
+          </div>
+          <div className='col-span-2'>
+            <div className='button'>Learn More</div>
+          </div>
+          <div className='row-start-1 row-span-2 col-span-2 flex justify-center'><img alt='' src={homeDragon} className='home-dragon'/></div>
         </section>
+        { /* ----------------HOME INTRO END -------------- */ }
       </main>
     )
   }

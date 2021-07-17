@@ -21,7 +21,7 @@ export default class Header extends React.Component{
       <header className='header'>
         { /* ---------------- SOCIAL MEDIA START -------------- */ }
 
-        <div className='bg-gradient-to-r from-platinum via-red-main to-purple-main flex items-center justify-between'>
+        <div className='bg-gradient-to-r from-platinum via-red-main to-purple-main flex items-center justify-between font-sans'>
           <p className='follow mx-2 pmain'>Follow me!</p>
           <div className='flex'>
             <a className='contents plat' href='https://www.facebook.com/RivettiValentin/'>
@@ -40,7 +40,7 @@ export default class Header extends React.Component{
 
         { /* ---------------- MAIN HEADER START -------------- */ }
 
-        <div className='header-main bg-platinum relative flex flex-col font-serif lg:flex-row lg:grid lg:grid-cols-3'>
+        <div className='header-main bg-platinum relative flex flex-col lg:flex-row lg:grid lg:grid-cols-3'>
 
           { /* ---------------- LOGO START -------------- */ }
 
