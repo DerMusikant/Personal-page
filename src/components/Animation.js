@@ -1,4 +1,6 @@
-class Anim extends React.Component {
+import React from 'react'
+
+export default class Anim extends React.Component {
 
     // INITIALIZE CLASS STATE
 
@@ -9,7 +11,8 @@ class Anim extends React.Component {
         trans: {
           fromLeft: 'translate(-200px, 0)',
           fromRight: 'translate(200px, 0)',
-          fromBot: 'translate(0, 200px)'
+          fromBot: 'translate(0, 200px)',
+          flip: 'rotateY(180deg)'
         }
       }
     }
@@ -21,7 +24,7 @@ class Anim extends React.Component {
         const blocks = document.querySelectorAll('.anim')
         blocks.forEach( block => {
           block.classList.add('hide')
-          block.style.transform = `${this.state.trans.[block.dataset.trans]} scale(0.8)`
+          block.style.transform = `${this.state.trans.[block.dataset.trans]} scale(${block.dataset.scale || 1})`
           block.style.transition = `all 1s ease ${block.dataset.delay || `0s`}`
           this.observer.observe(block)
         })

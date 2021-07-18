@@ -12,6 +12,7 @@ html{
   color: var(--purple-main);
   background-color: var(--platinum);
   font-family: serif;
+  scroll-behavior: smooth;
 }
 
 .show{
@@ -134,6 +135,10 @@ html{
 
 .home-dragon{
  width: 150px;
+}
+
+.main-block{
+  min-height: calc(1vh - 140px);
 }
 
 
