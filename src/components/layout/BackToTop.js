@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Top from '../assets/icons/chevron-up-solid.svg'
+import Top from '../../assets/icons/chevron-up-solid.svg'
 
 export default class BackToTop extends React.Component{
 

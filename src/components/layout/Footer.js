@@ -1,10 +1,10 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import Logo from '../assets/icons/dragon-solid.svg'
-import Face from '../assets/icons/Facebook-square-brands.svg'
-import Linked from '../assets/icons/linkedin-brands.svg'
-import Git from '../assets/icons/github-brands.svg'
+import Logo from '../../assets/icons/dragon-solid.svg'
+import Face from '../../assets/icons/Facebook-square-brands.svg'
+import Linked from '../../assets/icons/linkedin-brands.svg'
+import Git from '../../assets/icons/github-brands.svg'
 
 
 export default class Footer extends React.Component{

@@ -8,6 +8,11 @@
   --purple-main: #1E152A;
 }
 
+#details{
+  height: 100vh;
+  width: 300px;
+}
+
 html{
   color: var(--purple-main);
   background-color: var(--platinum);
@@ -134,11 +139,16 @@ html{
 
 
 .home-dragon{
- width: 150px;
+ height: 35vh;
 }
 
-.main-block{
-  min-height: calc(1vh - 140px);
+.home-main{
+  height: calc(100vh - 140px)
+}
+
+.button{
+  width: 80%;
+  max-width: 480px;
 }
 
 
@@ -148,16 +158,27 @@ html{
 
 /* ----------------------TABLET MEDIA QUERY START -------------------- */
 
-@media (min-width: 768px) {
+  @media (min-width: 768px) {
+    /* ----------------------------- HEADER STYLES START -------------------------- */
 
-  /* ----------------------------- HEADER STYLES START -------------------------- */
+    .contact-me{
+      border-radius: 5rem;
+    }
 
-  .contact-me{
-    border-radius: 5rem;
+    /* ----------------------------- HEADER STYLES END -------------------------- */
   }
 
-  /* ----------------------------- HEADER STYLES END -------------------------- */
-
-}
-
 /* -------------------TABLET MEDIA QUERY END------------------------- */
+
+
+/* -------------------PC MEDIA QUERY START------------------------- */
+  @media (min-width: 1024px) {
+    /* ------------------------- HOME STYLES START ------------------ */
+
+    .home-dragon{
+      height: 45vh;
+    }
+
+    /* ------------------------- HOME STYLES END ------------------ */
+  }
+/* -------------------PC MEDIA QUERY END------------------------- */
