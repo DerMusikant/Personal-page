@@ -9,9 +9,9 @@ export default class Anim extends React.Component {
       this.handleIntersection = this.handleIntersection.bind(this)
       this.state = {
         trans: {
-          fromLeft: 'translate(-200px, 0)',
-          fromRight: 'translate(200px, 0)',
-          fromBot: 'translate(0, 200px)',
+          fromLeft: 'translate(-100px, 0)',
+          fromRight: 'translate(100px, 0)',
+          fromBot: 'translate(0, 100px)',
           flip: 'rotateY(180deg)'
         }
       }
@@ -34,6 +34,7 @@ export default class Anim extends React.Component {
 
       handleIntersection(entries){
         entries.forEach(entry => {
+          console.log(entry.intersectionRatio)
           if(entry.intersectionRatio > 0.2){
             entry.target.classList.remove('hide')
             entry.target.style.transform = ``

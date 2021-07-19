@@ -31,8 +31,8 @@ export default class BackToTop extends React.Component{
 
   render(){
     return (
-        <div className='back-to-top fixed bg-purple-main right-8 bottom-8 w-14 h-14 rounded-full flex justify-center items-center hide' onClick={this.handleClick}>
-          <Top className='w-10 plat'/>
+        <div className='back-to-top fixed bg-purple-main right-8 bottom-8 w-14 h-14 rounded-full flex justify-center items-center hide md:w-10 md:h-10' onClick={this.handleClick}>
+          <Top className='w-10 plat md:w-6 md:h-6'/>
         </div>
     )
   }

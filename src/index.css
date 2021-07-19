@@ -8,9 +8,8 @@
   --purple-main: #1E152A;
 }
 
-#details{
-  height: 100vh;
-  width: 300px;
+.loading{
+  height: calc(100vh - 140px);
 }
 
 html{
@@ -143,11 +142,10 @@ html{
 }
 
 .home-main{
-  height: calc(100vh - 140px)
+  height: calc(100vh - 140px);
 }
 
 .button{
-  width: 80%;
   max-width: 480px;
 }
 
@@ -159,6 +157,11 @@ html{
 /* ----------------------TABLET MEDIA QUERY START -------------------- */
 
   @media (min-width: 768px) {
+
+    html{
+      font-size: 1.2rem;
+    }
+
     /* ----------------------------- HEADER STYLES START -------------------------- */
 
     .contact-me{

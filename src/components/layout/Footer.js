@@ -28,7 +28,7 @@ export default class Footer extends React.Component{
                   <Logo className='dragon plat' />
                   <p>Draco</p>
                   </div>
-                  <p>Your dream website<br />For your dream company</p>
+                  <p>We make a Dragon<br />Out of your Website</p>
                 </div>
               </Link>
             </div>
