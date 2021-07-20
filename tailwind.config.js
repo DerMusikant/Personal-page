@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   purge: {
     enabled: true,
@@ -9,7 +11,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      colors:{
+      colors: {
         red: {
           main: '#E7062B'
         },
@@ -19,6 +21,10 @@ module.exports = {
         }
       }
     },
+    screens: {
+      'xs': '475px',
+      ...defaultTheme.screens
+    }
   },
   variants: {
     extend: {},

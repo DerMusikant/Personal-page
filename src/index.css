@@ -138,14 +138,34 @@ html{
 
 
 .home-dragon{
- height: 35vh;
+ height: 20vh;
 }
 
 .home-main{
   height: calc(100vh - 140px);
 }
 
+.home-main__grid{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template: repeat(4, 20%) / calc(60% - 0.5rem) calc(40% - 0.5rem);
+  grid-template-areas: "title img"
+                       "info img"
+                       "info img"
+                       "button img";
+}
+
+.home-main__grid div{
+  grid-column: 1 / span 2;
+}
+
+.home-main__img{
+  grid-row-start: 1;
+}
 .button{
+  display: flex;
+  justify-content: center;
+  width: 100%;
   max-width: 480px;
 }
 
@@ -154,8 +174,50 @@ html{
 
 
 
-/* ----------------------TABLET MEDIA QUERY START -------------------- */
 
+
+
+
+
+/* ----------------------LANDSCAPE MEDIA QUERY START -------------------- */
+  @media (min-width: 475px) {
+    /* ------------------------- HOME STYLES START ------------------ */
+    .home-dragon{
+      height: 35vh;
+    }
+
+    .home-main__grid{
+      grid-gap: normal;
+    }
+
+    .home-main__grid div{
+      grid-column: auto / span 1;
+    }
+
+    .home-main__title{
+      grid-area: title;
+    }
+
+    .home-main__info{
+      grid-area: info;
+    }
+
+    .home-main__button{
+      grid-area: button;
+    }
+
+    .home-main__img{
+      grid-column-start: 2;
+      grid-area: img;
+    }
+    /* ------------------------- HOME STYLES END ------------------ */
+  }
+/* -------------------LANDSCAPE MEDIA QUERY END------------------------- */
+
+
+
+
+/* ----------------------TABLET MEDIA QUERY START -------------------- */
   @media (min-width: 768px) {
 
     html{
@@ -163,25 +225,22 @@ html{
     }
 
     /* ----------------------------- HEADER STYLES START -------------------------- */
-
     .contact-me{
       border-radius: 5rem;
     }
-
     /* ----------------------------- HEADER STYLES END -------------------------- */
   }
-
 /* -------------------TABLET MEDIA QUERY END------------------------- */
+
+
 
 
 /* -------------------PC MEDIA QUERY START------------------------- */
   @media (min-width: 1024px) {
     /* ------------------------- HOME STYLES START ------------------ */
-
     .home-dragon{
       height: 45vh;
     }
-
     /* ------------------------- HOME STYLES END ------------------ */
   }
 /* -------------------PC MEDIA QUERY END------------------------- */
