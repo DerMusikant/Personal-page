@@ -169,6 +169,12 @@ html{
   max-width: 480px;
 }
 
+.card{
+  box-shadow: 5px 10px 20px -10px var(--purple-main);
+  border-radius: 1rem;
+  background-image: linear-gradient(to bottom, var(--red-main), var(--platinum));
+}
+
 
 /* ------------------------- HOME STYLES END ------------------ */
 
