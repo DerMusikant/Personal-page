@@ -9,7 +9,7 @@ export default class Home extends Anim{
 
   render(){
     return (
-      <main className='flex flex-col justify-center items-center overflow-x-hidden'>
+      <main>
         <HomeMain />
         <HomeServices />
       </main>

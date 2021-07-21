@@ -40,7 +40,7 @@ export default class Header extends React.Component{
 
         { /* ---------------- MAIN HEADER START -------------- */ }
 
-        <div className='header-main bg-platinum relative flex flex-col lg:grid lg:grid-cols-3'>
+        <div className='header-main bg-platinum relative flex flex-col lg:grid lg:grid-cols-4'>
 
           { /* ---------------- LOGO START -------------- */ }
 
@@ -57,7 +57,7 @@ export default class Header extends React.Component{
 
           { /* ---------------- NAVIGATION BAR START -------------- */ }
 
-          <div className='rmain text-center mx-2 items-center flex-col hidden lg:flex lg:col-span-2 lg:flex-row lg:justify-end' id='navBar'>
+          <div className='rmain text-center mx-2 items-center flex-col hidden lg:flex lg:col-span-3 lg:flex-row lg:justify-end' id='navBar'>
             <Link to='/' className='navBar__item p-3 px-6 w-full border-red-main lg:w-auto lg:shadow-none' onClick={this.handleClick}>Home</Link>
             <Link to='/services' className='navBar__item p-3 px-6 w-full border-red-main lg:w-auto lg:shadow-none' onClick={this.handleClick}>Services</Link>
             <Link to='/about' className='navBar__item p-3 px-6 w-full border-red-main lg:w-auto lg:shadow-none' onClick={this.handleClick}>About</Link>
