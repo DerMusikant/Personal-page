@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '../general/Button'
 
 import homeDragon from '../../assets/img/red-dragon.png'
 
@@ -20,7 +19,7 @@ export default class HomeMain extends React.Component{
               </div>
               <div className='home-main__button w-3/5 h-4/5'>
                 <div className='button'>
-                  <a href='#services' className='w-full anim plat bg-gradient-to-r from-red-600 to-red-main p-2 rounded-full'>
+                  <a href='#services' className='button-content w-full anim plat bg-gradient-to-r from-red-600 to-red-main p-2 rounded-full'>
                     Learn More
                   </a>
                 </div>

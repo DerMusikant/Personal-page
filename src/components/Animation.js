@@ -34,7 +34,6 @@ export default class Anim extends React.Component {
 
       handleIntersection(entries){
         entries.forEach(entry => {
-          console.log(entry.intersectionRatio)
           if(entry.intersectionRatio > 0.2){
             entry.target.classList.remove('hide')
             entry.target.style.transform = ``
