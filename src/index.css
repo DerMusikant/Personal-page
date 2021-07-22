@@ -6,6 +6,11 @@
   --red-main: #E7062B;
   --platinum: #E8E9ED;
   --purple-main: #1E152A;
+  --blue-main: #3b82f6;
+}
+
+.delete{
+  max-width: 1366px;
 }
 
 .loading{
@@ -24,7 +29,6 @@ main{
   margin: 0 auto;
   flex-direction: column;
   max-width: 1920px;
-  justify-content: center;
   align-items: center;
   overflow-x: hidden;
 }
@@ -36,6 +40,10 @@ main{
 .hide{
   opacity: 0;
   visibility: hidden;
+}
+
+.blue{
+  color: var(--blue-main);
 }
 
 .plat{
@@ -196,7 +204,6 @@ main{
 .card{
   box-shadow: 5px 10px 20px -10px var(--purple-main);
   border-radius: 1rem;
-  background-image: linear-gradient(to bottom, var(--red-main), var(--platinum));
 }
 
 

@@ -22,7 +22,7 @@ export default class HomeDetails extends React.Component{
                 <h3 className='rmain text-xl font-medium my-3'>Main Services Title</h3>
                 <p className='my-10'>Main Details Information before cards Main Details Information before cards Main Details Information before cards Main Details Information before cards Main Details Information before cards Main Details Information before cards Main Details Information before cards Main Details Information before cards Main Details Information before cards </p>
             </div>
-            <div className='button col-span-2 my-5 lg:self-start lg:col-auto lg:row-span-2'>
+            <div className='button col-span-2 my-8 lg:my-0 lg:self-start lg:col-auto lg:row-span-2'>
               <Button content='Check out Services!' link='/services'/>
             </div>
           </div>

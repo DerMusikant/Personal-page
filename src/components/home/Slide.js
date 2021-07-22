@@ -1,5 +1,18 @@
 import React from 'react'
 
+import Html from '../../assets/icons/html5.svg'
+import Css from '../../assets/icons/css3.svg'
+import Js from '../../assets/icons/js.svg'
+import JsReact from '../../assets/icons/react.svg'
+import Figma from '../../assets/icons/figma.svg'
+import Git from '../../assets/icons/git.svg'
+import GitHub from '../../assets/icons/github-brands.svg'
+import Tailwind from '../../assets/icons/tailwindcss.svg'
+import Photoshop from '../../assets/icons/photoshop.svg'
+import Web from '../../assets/icons/web-components.svg'
+import Webpack from '../../assets/icons/webpack.svg'
+import Typescript from '../../assets/icons/typescript.svg'
+
 export default class Slide extends React.Component{
 
   right = () => {
@@ -12,7 +25,7 @@ export default class Slide extends React.Component{
 
     const firstElement = this.state.slide.children[0]
 
-    this.state.slide.style.transition = `all 2s cubic-bezier(0.5,0,0,1)`
+    this.state.slide.style.transition = `all 1s cubic-bezier(0.5,0,0,1)`
     this.state.slide.style.transform = `translateX(-${firstElement.offsetWidth}px)`
 
 
@@ -22,7 +35,7 @@ export default class Slide extends React.Component{
 
   handleIntersection = (entry) => {
     if(entry[0].intersectionRatio > 0){
-      this.state.interval = setInterval(this.right, 3000)
+      this.state.interval = setInterval(this.right, 2500)
     }else{
       clearInterval(this.state.interval)
     }
@@ -46,42 +59,78 @@ export default class Slide extends React.Component{
 
   render(){
     return (
-      <div className='overflow-x-hidden'>
-        <div id='slide' className='self-start flex flex-nowrap'>
+      <div className='self-start overflow-x-hidden'>
+        <div id='slide' className='flex items-center flex-nowrap text-center font-sans font-bold blue'>
           <div>
-            <div className='w-40 h-40 m-5 bg-red-main'>
+            <div className='flex flex-col items-center mx-5'>
+              <Html className='h-20'/>
+              <span>HTML</span>
             </div>
           </div>
           <div>
-            <div className='w-40 h-40 m-5 bg-purple-main'>
+            <div className='flex flex-col items-center mx-5'>
+              <Css className='h-20'/>
+              <span>CSS</span>
             </div>
           </div>
           <div>
-            <div className='w-40 h-40 m-5 bg-blue-500'>
+            <div className='flex flex-col items-center mx-5'>
+              <Tailwind className='h-20'/>
+              <span>TailwindCss</span>
             </div>
           </div>
           <div>
-            <div className='w-40 h-40 m-5 bg-red-main'>
+            <div className='flex flex-col items-center mx-5'>
+              <Js className='h-20'/>
+              <span>Javascript</span>
             </div>
           </div>
           <div>
-            <div className='w-40 h-40 m-5 bg-purple-main'>
+            <div className='flex flex-col items-center mx-5'>
+              <Typescript className='h-20'/>
+              <span>Typescript</span>
             </div>
           </div>
           <div>
-            <div className='w-40 h-40 m-5 bg-blue-500'>
+            <div className='flex flex-col items-center mx-5'>
+              <JsReact className='h-20'/>
+              <span>React</span>
             </div>
           </div>
           <div>
-            <div className='w-40 h-40 m-5 bg-red-main'>
+            <div className='flex flex-col items-center mx-5'>
+              <Webpack className='h-20'/>
+              <span>Webpack</span>
             </div>
           </div>
           <div>
-            <div className='w-40 h-40 m-5 bg-purple-main'>
+            <div className='flex flex-col items-center mx-5'>
+              <Figma className='h-20'/>
+              <span>Figma</span>
             </div>
           </div>
           <div>
-            <div className='w-40 h-40 m-5 bg-blue-500'>
+            <div className='flex flex-col items-center mx-5'>
+              <Photoshop className='h-20'/>
+              <span>Photoshop</span>
+            </div>
+          </div>
+          <div>
+            <div className='flex flex-col items-center mx-5'>
+              <Git className='h-20'/>
+              <span>Git</span>
+            </div>
+          </div>
+          <div>
+            <div className='flex flex-col items-center mx-5'>
+              <GitHub className='h-20'/>
+              <span>GitHub</span>
+            </div>
+          </div>
+          <div>
+            <div className='flex flex-col items-center mx-5'>
+              <Web className='h-20'/>
+              <span>Web Components</span>
             </div>
           </div>
         </div>
