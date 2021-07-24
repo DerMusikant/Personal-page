@@ -12,9 +12,7 @@ export default class HomeAbout extends React.Component{
         <h3>
           Technologies I work with:
         </h3>
-        <div class='delete'>
-          <Slide />
-        </div>
+        <Slide />
         <p>Want to know more about my skills?</p>
         <div className='button my-5'>
           <Button link='/about' content='Go to: About' />

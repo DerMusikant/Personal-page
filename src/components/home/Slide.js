@@ -59,7 +59,7 @@ export default class Slide extends React.Component{
 
   render(){
     return (
-      <div className='self-start overflow-x-hidden'>
+      <div className='delete self-start overflow-x-hidden w-full'>
         <div id='slide' className='flex items-center flex-nowrap text-center font-sans font-bold blue'>
           <div>
             <div className='flex flex-col items-center mx-5'>

@@ -15,7 +15,7 @@ export default class Footer extends React.Component{
 
   render(){
     return (
-      <footer className='font-sans'>
+      <footer className='font-sans plat'>
         <div className='grid grid-rows-6 justify-center items-center bg-gradient-to-r from-red-600 to-red-main md:grid-cols-2 md:grid-rows-2 xl:flex xl:justify-evenly'>
 
           { /* ---------------- FOOTER LOGO START -------------- */ }
@@ -25,7 +25,7 @@ export default class Footer extends React.Component{
               <Link to='/' className='contents'>
                 <div className='flex flex-col text-center items-center justify-center w-max plat md:flex-row'>
                   <div className='m-2'>
-                  <Logo className='dragon plat' />
+                  <Logo className='dragon' />
                   <p>Draco</p>
                   </div>
                   <p>We make a Dragon<br />Out of your Website</p>
@@ -74,7 +74,7 @@ export default class Footer extends React.Component{
 
         { /* ---------------- LEGAL INFO -------------- */ }
 
-        <div className='text-center'>
+        <div className='text-center pmain'>
           © Copyright Valentin Rivetti 2021. All Rights Reserved
         </div>
 
