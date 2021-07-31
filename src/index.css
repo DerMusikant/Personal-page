@@ -2,6 +2,12 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+
+@font-face {
+  font-family: 'styleScript';
+  src: url('./assets/fonts/StyleScript-Regular.ttf');
+}
+
 :root{
   --red-main: #E7062B;
   --platinum: #E8E9ED;
@@ -56,6 +62,10 @@ main{
 
 .pmain{
   color: var(--purple-main);
+}
+
+.font-style{
+  font-family: 'styleScript'
 }
 
 /* ----------------------------- HEADER STYLES START -------------------------- */
