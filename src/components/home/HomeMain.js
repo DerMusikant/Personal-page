@@ -5,6 +5,8 @@ import homeDragon from '../../assets/img/red-dragon.png'
 
 export default class HomeMain extends React.Component{
 
+  handleClick = () => {document.getElementById('services').scrollIntoView()}
+
   render(){
     return (
         <section className='home-main flex justify-center items-center text-center'>
@@ -19,9 +21,9 @@ export default class HomeMain extends React.Component{
               </div>
               <div className='home-main__button w-3/5 h-4/5'>
                 <div className='button'>
-                  <a href='#services' className='button-content w-full anim plat bg-gradient-to-r from-red-600 to-red-main p-2 rounded-full'>
+                  <div onClick={this.handleClick} className='button-content w-full anim plat bg-gradient-to-r from-red-600 to-red-main p-2 rounded-full'>
                     Learn More
-                  </a>
+                  </div>
                 </div>
               </div>
               <div className='anim home-dragon home-main__img' data-trans='fromBot' data-scale='0.5'>

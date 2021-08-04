@@ -20,7 +20,7 @@ export default class Anim extends React.Component {
     // ADDS ANIMATED ELEMENTS TO OBSERVATION WITH TRANSFORMATION AND TRANSITION
 
       componentDidMount(){
-        this.observer = new IntersectionObserver(this.handleIntersection, {threshold: 0.2})
+        this.observer = new IntersectionObserver(this.handleIntersection, {threshold: 0.5})
         const blocks = document.querySelectorAll('.anim')
         blocks.forEach( block => {
           block.classList.add('hide')

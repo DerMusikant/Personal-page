@@ -8,6 +8,7 @@ import Layout from './components/layout/Layout'
 const
 Home = React.lazy(()=>import('./pages/Home')),
 About = React.lazy(()=>import('./pages/About')),
+FAQ = React.lazy(()=>import('./pages/FAQ')),
 NotFound = React.lazy(()=>import('./pages/NotFound'))
 
 ReactDOM.render(
@@ -17,6 +18,7 @@ ReactDOM.render(
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
+          <Route path='/FAQ' component={FAQ} />
           <Route path='*' component={NotFound} />
         </Switch>
       </Suspense>

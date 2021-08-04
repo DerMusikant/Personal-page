@@ -198,6 +198,7 @@ main{
 .button{
   display: flex;
   justify-content: center;
+  cursor: pointer;
   transition: all 0.5s ease;
   width: 100%;
   max-width: 480px;
@@ -218,9 +219,6 @@ main{
 
 
 /* ------------------------- HOME STYLES END ------------------ */
-
-
-
 
 
 
@@ -258,6 +256,17 @@ main{
       grid-area: img;
     }
     /* ------------------------- HOME STYLES END ------------------ */
+
+
+    
+    /* ----------------------------- FAQ STYLES START -------------------------- */
+
+    .questions{
+      display: grid;
+      grid-template-columns: 25% auto;
+    }
+
+    /* ----------------------------- FAQ STYLES END -------------------------- */
   }
 /* -------------------LANDSCAPE MEDIA QUERY END------------------------- */
 
@@ -276,6 +285,9 @@ main{
       border-radius: 5rem;
     }
     /* ----------------------------- HEADER STYLES END -------------------------- */
+
+
+
   }
 /* -------------------TABLET MEDIA QUERY END------------------------- */
 
