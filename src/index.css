@@ -179,9 +179,11 @@ main{
 }
 
 .home-main__grid{
+  max-height: 420px;
+  max-width: 1366px;
   display: grid;
-  grid-gap: 1rem;
-  grid-template: repeat(4, 20%) / calc(60% - 0.5rem) calc(40% - 0.5rem);
+  grid-template: repeat(4, 25%) / 60% 40%;
+  height: 80%;
   grid-template-areas: "title img"
                        "info img"
                        "info img"
@@ -204,6 +206,19 @@ main{
   max-width: 480px;
 }
 
+.learn-more{
+  animation: button 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes button {
+  0%, 100% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
 .button:hover{
   transform: scale(1.05);
 }
@@ -221,8 +236,20 @@ main{
 /* ------------------------- HOME STYLES END ------------------ */
 
 
+/* ------------------------- FAQ STYLES START ------------------ */
+
+.questions--list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  height: min-content;
+  align-self: end;
+}
 
 
+/* ------------------------- FAQ STYLES START ------------------ */
 
 /* ----------------------LANDSCAPE MEDIA QUERY START -------------------- */
   @media (min-width: 475px) {
@@ -258,7 +285,7 @@ main{
     /* ------------------------- HOME STYLES END ------------------ */
 
 
-    
+
     /* ----------------------------- FAQ STYLES START -------------------------- */
 
     .questions{
@@ -285,6 +312,16 @@ main{
       border-radius: 5rem;
     }
     /* ----------------------------- HEADER STYLES END -------------------------- */
+
+
+    /* ----------------------------- FAQ STYLES START -------------------------- */
+
+    .questions--list{
+      top: 0;
+      align-self: start;
+    }
+
+    /* ----------------------------- FAQ STYLES END -------------------------- */
 
 
 

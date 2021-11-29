@@ -4,9 +4,7 @@ import Questions from '../components/faq/Questions'
 export default class FAQ extends React.Component{
   render(){
     return (
-      <main>
         <Questions />
-      </main>
     )
   }
 }
