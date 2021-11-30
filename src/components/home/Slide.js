@@ -44,7 +44,7 @@ export default class Slide extends React.Component{
     this.state.slide.addEventListener('transitionend', transition)
   }
 
-  //Slide won't move unless it's on user view
+  //Slide won't move unless it's on user's view
   handleIntersection = (entry) => {
     if(entry[0].intersectionRatio > 0){
       this.state.interval = setInterval(this.right, 2500)

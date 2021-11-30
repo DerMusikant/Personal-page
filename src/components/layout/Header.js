@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {NavLink as Link} from 'react-router-dom'
 
 import Logo from '../../assets/icons/dragon-solid.svg'
 import Face from '../../assets/icons/Facebook-square-brands.svg'
@@ -17,6 +17,10 @@ export default class Header extends React.Component{
   }
 
   render(){
+
+    const navLinkStyles = 'navBar__item p-3 px-6 w-full border-red-main lg:w-auto lg:shadow-none'
+    const contactStyles = 'contact-me plat bg-red-main p-3 w-full lg:w-auto hover:bg-platinum'
+
     return (
       <header className='header'>
         { /* ---------------- SOCIAL MEDIA START -------------- */ }
@@ -58,10 +62,10 @@ export default class Header extends React.Component{
           { /* ---------------- NAVIGATION BAR START -------------- */ }
 
           <div className='rmain text-center mx-2 items-center flex-col hidden lg:flex lg:col-span-3 lg:flex-row lg:justify-end' id='navBar'>
-            <Link to='/' className='navBar__item p-3 px-6 w-full border-red-main lg:w-auto lg:shadow-none' onClick={this.handleClick}>Home</Link>
-            <Link to='/services' className='navBar__item p-3 px-6 w-full border-red-main lg:w-auto lg:shadow-none' onClick={this.handleClick}>Services</Link>
-            <Link to='/about' className='navBar__item p-3 px-6 w-full border-red-main lg:w-auto lg:shadow-none' onClick={this.handleClick}>About</Link>
-            <Link to='/FAQ' className='navBar__item p-3 px-6 w-full border-red-main lg:w-auto lg:shadow-none' onClick={this.handleClick}>Frequent Questions</Link>
+            <Link exact to='/' className={navLinkStyles} onClick={this.handleClick}>Home</Link>
+            <Link to='/services' className={navLinkStyles} onClick={this.handleClick}>Services</Link>
+            <Link to='/about' className={navLinkStyles} onClick={this.handleClick}>About</Link>
+            <Link to='/FAQ' className={navLinkStyles} onClick={this.handleClick}>Frequent Questions</Link>
             <Link to='/contact' className='contact-me plat bg-red-main p-3 w-full lg:w-auto hover:bg-platinum' onClick={this.handleClick}>Contact Me!</Link>
           </div>
           <div id='burger' className='h-10 w-10 burger absolute flex flex-col justify-around right-0 mx-3 lg:hidden' onClick={this.handleClick}>

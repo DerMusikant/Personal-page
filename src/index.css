@@ -8,6 +8,10 @@
   src: url('./assets/fonts/StyleScript-Regular.ttf');
 }
 
+a[aria-current] {
+  border-bottom: 1px solid var(--purple-main);
+}
+
 :root{
   --red-main: #E7062B;
   --platinum: #E8E9ED;
@@ -250,6 +254,15 @@ main{
 
 
 /* ------------------------- FAQ STYLES START ------------------ */
+
+/* ------------------------- CONTACT STYLES START ------------------ */
+
+.contact {
+  width: 80px;
+  height: 80px;
+}
+
+/* ------------------------- CONTACT STYLES START ------------------ */
 
 /* ----------------------LANDSCAPE MEDIA QUERY START -------------------- */
   @media (min-width: 475px) {
