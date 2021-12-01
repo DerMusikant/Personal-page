@@ -9,6 +9,7 @@ Home = React.lazy(()=>import('./pages/Home')),
 About = React.lazy(()=>import('./pages/About')),
 FAQ = React.lazy(()=>import('./pages/FAQ')),
 Contact = React.lazy(()=>import('./pages/Contact')),
+Services = React.lazy(()=>import('./pages/services')),
 NotFound = React.lazy(()=>import('./pages/NotFound'))
 
 export default () => {
@@ -21,6 +22,7 @@ export default () => {
             <Route path='/about' component={About} />
             <Route path='/FAQ' component={FAQ} />
             <Route path='/contact' component={Contact} />
+            <Route path='/services' component={Services} />
             <Route path='*' component={NotFound} />
           </Switch>
         </Suspense>
