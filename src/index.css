@@ -31,7 +31,6 @@ html{
   color: var(--purple-main);
   background-color: var(--platinum);
   font-family: serif;
-  scroll-behavior: smooth;
 }
 
 main{

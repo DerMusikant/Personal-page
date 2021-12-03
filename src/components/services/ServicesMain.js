@@ -7,7 +7,7 @@ import Service from './Service'
 
 export default class ServicesMain extends React.Component{
 
-  handleClick = () => {document.getElementById('services').scrollIntoView()}
+  handleClick = () => {document.getElementById('services').scrollIntoView({behavior: 'smooth'})}
 
   render(){
     return (

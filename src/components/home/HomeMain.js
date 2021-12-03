@@ -7,7 +7,7 @@ import Grid from '../general/Grid'
 
 export default class HomeMain extends React.Component{
 
-  handleClick = () => {document.getElementById('homeServices').scrollIntoView()}
+  handleClick = () => {document.getElementById('homeServices').scrollIntoView({behavior: 'smooth'})}
 
   render(){
     return (
