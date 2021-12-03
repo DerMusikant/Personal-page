@@ -9,10 +9,6 @@ import Git from '../../assets/icons/github-brands.svg'
 
 export default class Footer extends React.Component{
 
-  handleClick(){
-    document.documentElement.scrollTo({top: 0, behavior: 'smooth'})
-  }
-
   render(){
     return (
       <footer className='font-sans plat'>
@@ -25,10 +21,10 @@ export default class Footer extends React.Component{
               <Link to='/' className='contents'>
                 <div className='flex flex-col text-center items-center justify-center w-max plat md:flex-row'>
                   <div className='m-2'>
-                  <Logo className='dragon' />
-                  <p>Draco</p>
+                    <Logo className='dragon m-auto' />
+                    <p>Draco by Valentin Rivetti</p>
                   </div>
-                  <p>We make a Dragon<br />Out of your Website</p>
+                  <p>I'll make a Dragon<br />Out of your Website</p>
                 </div>
               </Link>
             </div>

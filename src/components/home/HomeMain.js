@@ -11,10 +11,8 @@ export default class HomeMain extends React.Component{
 
   render(){
     return (
-        <section className='home-main flex justify-items-center items-center text-center'>
           <Grid title='A Dragon is inside your website' description={<p>I use the fire of wisdom to help your business outstand on the internet.
-            <br />Together we can make the best dragon for your future company's website.</p>} img={homeDragon} alt='Dragon logo' click={this.handleClick}/>
-        </section>
+            <br />Together we can make the best dragon for your future company's website.</p>} img={homeDragon} alt='Dragon logo' click={this.handleClick} button='Learn More'/>
     )
   }
 }
