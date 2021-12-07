@@ -131,6 +131,7 @@ main{
 
 .contact-me{
   transition: all 0.5s ease;
+  border: 1px solid transparent;
   box-shadow: inset 0px -10px 10px -10px var(--purple-main);
 }
 
@@ -241,6 +242,25 @@ main{
 
 /* ------------------------- FAQ STYLES START ------------------ */
 
+.question-item:active{
+  transform: scale(0.9);
+}
+
+.question:hover::after{
+  width:100%;
+  left:0;
+}
+
+.question::after{
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    background: var(--red-main);
+    transition: width .3s ease 0s,left .3s ease 0s;
+    width: 0;
+}
+
 .questions--list{
   display: flex;
   flex-direction: column;
@@ -326,15 +346,6 @@ main{
     /* ----------------------------- HEADER STYLES END -------------------------- */
 
 
-    /* ----------------------------- FAQ STYLES START -------------------------- */
-
-    .questions--list{
-      top: 0;
-      align-self: start;
-    }
-
-    /* ----------------------------- FAQ STYLES END -------------------------- */
-
 
 
   }
@@ -350,5 +361,6 @@ main{
       width: 75%;
     }
     /* ------------------------- HOME STYLES END ------------------ */
+
   }
 /* -------------------PC MEDIA QUERY END------------------------- */
