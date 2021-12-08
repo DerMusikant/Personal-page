@@ -177,6 +177,7 @@ main{
 
 .home-main{
   height: calc(100vh - 140px);
+  min-height: 250px;
 }
 
 .home-main__grid{

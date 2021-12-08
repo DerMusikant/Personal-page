@@ -19,7 +19,7 @@ export default class Services extends Anim{
           's needs.
         </h2>
         <Service content={<p>Any company and charity organization needs a beautiful website to be seen and atract people to your cause!</p>} title='Business and organization'/>
-        <Service content={<p>Give your customers a new taste and save the enviroment using a delicious online menu! (Did anybody say 'Mobile app'?)</p>} title='Cafe & Restaurant Websites' flip='1'/>
+        <Service content={<p>Give your customers a new taste and save the enviroment using a delicious online menu and attention!</p>} title='Cafe & Restaurant Websites' flip='1'/>
         <Service content={<p>Doctors, Lawyers, Plumbers, Music Teacher, you name it. Clients will easily contact you trough your future Website!</p>} title='Practitioner Websites'/>
         <Service content={<p>Maybe you need to show the world your amazing work of art, lucky you I'm here! I'll work to showcase your creativity.</p>} title='Portfolio Websites' flip='1'/>
       </main>
