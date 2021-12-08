@@ -13,7 +13,21 @@ export default class About extends Anim{
     return (
       <main>
         <PresentationCard />
-        <Project desktop={draco} mobile={dracoM} desktopAlt='' mobileAlt='' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed cursus purus, ac hendrerit dolor. Ut enim velit, iaculis a gravida eu, gravida quis tortor. Suspendisse potenti. Donec risus ex, efficitur et ultrices eget, tincidunt a risus. Ut pretium nulla vitae aliquet malesuada. Nunc sit amet sollicitudin nunc. Ut urna diam, dictum vitae euismod eu, tempor in felis. Duis aliquet ultrices velit ultricies mollis. Maecenas a volutpat justo. Vivamus ornare gravida diam sed pellentesque. Suspendisse placerat pharetra feugiat.' title='Lorem ipsum dolor sit amet'/>
+        <h2 id='my-work' className='self-start p-5 font-bold font-sans'>Valentin Rivetti's Personal Projects:</h2>
+        <Project desktop={draco} mobile={dracoM} desktopAlt='' mobileAlt='' title='Draco by Valentin Rivetti' description=
+          {
+            <>
+              OMG This very website!!<br/>
+              Draco is a fictional company run and developed by... Me! (As you guessed so far)<br/>
+              Made with all the tools you see at the end of the page, the main traits of this project are:
+              <ul className='list-disc list-inside'>
+                <li>ReactJs: Full project development and Single-page app</li>
+                <li>TailWindCSS: Most styles and responsive design</li>
+                <li>Git and Github: Yes please!</li>
+              </ul>
+            </>
+          }
+        />
         <Tech />
       </main>
   )

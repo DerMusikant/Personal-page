@@ -6,7 +6,7 @@ import homeDragon from '../../assets/img/red-dragon.png'
 
 export default class PresentationCard extends React.Component{
 
-  handleClick = () => {document.getElementById('services').scrollIntoView({behavior: 'smooth'})}
+  handleClick = () => {document.getElementById('my-work').scrollIntoView({behavior: 'smooth'})}
 
   render(){
     return (

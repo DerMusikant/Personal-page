@@ -8,9 +8,6 @@
   src: url('./assets/fonts/StyleScript-Regular.ttf');
 }
 
-a[aria-current] {
-  border-bottom: 1px solid var(--purple-main);
-}
 
 :root{
   --red-main: #E7062B;
@@ -233,11 +230,26 @@ main{
 
 .card{
   box-shadow: 5px 10px 20px -10px var(--purple-main);
-  border-radius: 1rem;
 }
 
 
 /* ------------------------- HOME STYLES END ------------------ */
+
+
+
+/* ------------------------- ABOUT STYLES START ------------------ */
+
+.desktop{
+  top: 5.5%;
+}
+
+.mobile{
+  top: 4%;
+  left: 14%;
+}
+
+/* ------------------------- ABOUT STYLES END ------------------ */
+
 
 
 /* ------------------------- FAQ STYLES START ------------------ */
@@ -356,6 +368,11 @@ main{
 
 /* -------------------PC MEDIA QUERY START------------------------- */
   @media (min-width: 1024px) {
+
+    a[aria-current] {
+      border-bottom: 1px solid var(--purple-main);
+    }
+
     /* ------------------------- HOME STYLES START ------------------ */
     .home-dragon{
       width: 75%;
