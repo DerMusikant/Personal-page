@@ -14,11 +14,11 @@ export default class About extends Anim{
       <main>
         <PresentationCard />
         <h2 id='my-work' className='self-start p-5 font-bold font-sans'>Valentin Rivetti's Personal Projects:</h2>
-        <Project desktop={draco} mobile={dracoM} desktopAlt='' mobileAlt='' title='Draco by Valentin Rivetti' description=
+        <Project desktop={draco} mobile={dracoM} desktopAlt='' mobileAlt='' title='Draco: Web Solutions' description=
           {
             <>
               OMG This very website!!<br/>
-              Draco is a fictional company run and developed by... Me! (As you guessed so far)<br/>
+              Draco is a fictional company run and developed by... Me! (As you guessed)<br/>
               Made with all the tools you see at the end of the page, the main traits of this project are:
               <ul className='list-disc list-inside'>
                 <li>ReactJs: Full project development and Single-page app</li>

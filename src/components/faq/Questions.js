@@ -14,7 +14,7 @@ export default class Questions extends React.Component{
       <div className='questions'>
           <ul className='questions--list'>
             Contents:
-            <li id='one' className='question-item transition-transform flex items-center my-2 p-2 shadow rounded cursor-pointer' onClick={this.handleClick}><div className='w-1 h-1 mx-2 bg-red-main'></div><div className='question'>Question number one?</div></li>
+            <li id='one' className='question-item transition-transform flex items-center my-2 p-2 shadow rounded cursor-pointer' onClick={this.handleClick}><div className='w-1 h-1 mx-2 bg-red-main'></div><div className='question'>What does a Web Developer do?</div></li>
             <li id='two' className='question-item transition-transform flex items-center  my-2 p-2 shadow rounded cursor-pointer' onClick={this.handleClick}><div className='w-1 h-1 mx-2 bg-red-main'></div><div className='question'>Question number two?</div></li>
             <li id='three' className='question-item transition-transform flex items-center  my-2 p-2 shadow rounded cursor-pointer' onClick={this.handleClick}><div className='w-1 h-1 mx-2 bg-red-main'></div><div className='question'>Question number three?</div></li>
             <li id='four' className='question-item transition-transform flex items-center  my-2 p-2 shadow rounded cursor-pointer' onClick={this.handleClick}><div className='w-1 h-1 mx-2 bg-red-main'></div><div className='question'>Question number four?</div></li>
@@ -26,7 +26,7 @@ export default class Questions extends React.Component{
             <li id='ten' className='question-item transition-transform flex items-center  my-2 p-2 shadow rounded cursor-pointer' onClick={this.handleClick}><div className='w-1 h-1 mx-2 bg-red-main'></div><div className='question'>Question number ten?</div></li>
           </ul>
         <div className='flex flex-col'>
-          <Question id='question-one' title='Question number one?' content='Answer content Answer content Answer content Answer content Answer content Answer content aoeu'/>
+          <Question id='question-one' title='What does a Web Developer do?' content="We basically create, modify and mantain Websites. We are responsible for the site's technical aspects, such as performance, capacity and inner functionality. (It's like coding a program but instead of downloading anything your client just visits a website, Nice!)"/>
           <Question id='question-two' title='Question number two?' content='Answer content Answer content Answer content Answer content Answer content Answer content Answer content Answer content Answer content Answer content aoeu'/>
           <Question id='question-three' title='Question number three?' content='Answer content Answer content Answer content Answer content Answer content Answer content Answer content Answer content Answer content Answer content  Answer content Answer content Answer content Answer content aoeu'/>
           <Question id='question-four' title='Question number four?' content='Answer content Answer content Answer content Answer content Answer content Answer content Answer content Answer content aoeu'/>
