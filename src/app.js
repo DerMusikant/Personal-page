@@ -5,6 +5,8 @@ import './index.css'
 import Layout from './components/layout/Layout'
 import ScrollToTop from './hooks/ScrollToTop'
 
+import Loading from './pages/Loading'
+
 const
 Home = React.lazy(()=>import('./pages/Home')),
 About = React.lazy(()=>import('./pages/About')),
@@ -17,7 +19,7 @@ export default () => {
   return (
     <Router>
       <Layout>
-        <Suspense fallback={<div className='loading bg-red-main'>Loading...</div>}>
+        <Suspense fallback={<Loading />}>
           <ScrollToTop />
           <Switch>
             <Route exact path='/' component={Home} />

@@ -2,6 +2,10 @@ import React from 'react'
 
 export default class NotFound extends React.Component{
   render(){
-    return (<h1>Error 404: Not Found</h1>)
+    return (
+      <div className='loading'>
+        <div className='animate-bounce'>Error 404: page not found.</div>
+      </div>
+    )
   }
 }

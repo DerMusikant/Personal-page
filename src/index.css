@@ -22,6 +22,10 @@
 
 .loading{
   height: calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 html{
@@ -36,6 +40,7 @@ main{
   flex-direction: column;
   max-width: 1920px;
   align-items: center;
+  justify-content: center;
   overflow-x: hidden;
 }
 
@@ -177,7 +182,7 @@ main{
 
 .home-main{
   height: calc(100vh - 140px);
-  min-height: 250px;
+  min-height: 515px;
 }
 
 .home-main__grid{
@@ -302,6 +307,11 @@ main{
     .home-dragon{
       width: 25vw;
     }
+
+    .home-main{
+      min-height: 250px;
+    }
+
 
     .home-main__grid{
       grid-gap: normal;
