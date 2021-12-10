@@ -7,7 +7,7 @@ export default class Project extends React.Component{
 
   render(){
     return (
-        <div className='w-full grid justify-items-center md:grid-cols-2'>
+        <div className='my-5 w-full grid justify-items-center md:grid-cols-2'>
               <div className='relative anim' data-trans={this.props.flip ? 'fromRight' : 'fromLeft'} data-delay='0.7s'>
                 <Desktop img={this.props.desktop} alt={this.props.desktopAlt} />
                 {
