@@ -64,7 +64,9 @@ module.exports = {
         { from: path.resolve(__dirname, 'src/assets/icons/icon.png')},
       ]
     }),
-    new GenerateSW()
+    new GenerateSW({
+      exclude: ['.git']
+    })
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
