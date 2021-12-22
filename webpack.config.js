@@ -1,7 +1,8 @@
 const
 path = require('path'),
 MiniCssExtractPlugin = require('mini-css-extract-plugin'),
-CopyPlugin = require('copy-webpack-plugin')
+CopyPlugin = require('copy-webpack-plugin'),
+{GenerateSW} = require('workbox-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js',
@@ -57,9 +58,13 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: path.resolve(__dirname, 'src/index.html')},
-        { from: path.resolve(__dirname, 'src/assets/sub/.git')}
+        { from: path.resolve(__dirname, 'src/assets/sub/.git')},
+        { from: path.resolve(__dirname, 'src/manifest.json')},
+        { from: path.resolve(__dirname, 'src/assets/icons/favicon.ico')},
+        { from: path.resolve(__dirname, 'src/assets/icons/icon.png')},
       ]
-    })
+    }),
+    new GenerateSW()
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
