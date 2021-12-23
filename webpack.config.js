@@ -65,7 +65,7 @@ module.exports = {
       ]
     }),
     new GenerateSW({
-      exclude: ['.git']
+      exclude: ['./.git']
     })
   ],
   devServer: {
