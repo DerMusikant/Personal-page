@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import dragon from '../../assets/img/red-dragon.png'
+
+import thanks from '../../assets/img/thanks.png'
 
 export default class HomeContact extends React.Component{
 
@@ -12,7 +13,7 @@ export default class HomeContact extends React.Component{
           <span className='text-base absolute -right-6 -bottom-2'>for visiting...</span>
         </div>
         <p className='sm:row-start-2'>I really wish to build a long term relationship with you!</p>
-        <img className='anim w-3/5 py-5 sm:row-span-3' data-delay='0.5s' data-trans='flip' alt='' src={dragon} />
+        <img className='anim w-3/5 py-5 sm:row-span-3' data-delay='0.5s' data-trans='flip' alt='' src={thanks} />
         <div>
           <div className='my-5'><Link to='/contact' className='contact-me plat bg-red-main p-3 w-full lg:w-auto hover:bg-platinum' onClick={this.handleClick}>Contact Me!</Link></div>
           <p>for more info... or just to say hello!</p>

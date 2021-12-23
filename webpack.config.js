@@ -8,7 +8,7 @@ module.exports = {
   entry: './src/index.js',
   output:{
     path: path.resolve(__dirname, 'dist'),
-    filename: 'index.js',
+    filename: 'js/index.js',
     publicPath: '/',
     clean: true
   },
@@ -49,7 +49,10 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|jpeg|gif|ttf)$/i,
-        type: 'asset/resource'
+        type: 'asset/resource',
+        generator: {
+         filename: 'assets/[hash][ext][query]'
+       }
       }
     ]
   },
@@ -58,10 +61,9 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: path.resolve(__dirname, 'src/index.html')},
-        { from: path.resolve(__dirname, 'src/assets/sub/.git')},
         { from: path.resolve(__dirname, 'src/manifest.json')},
-        { from: path.resolve(__dirname, 'src/assets/icons/favicon.ico')},
-        { from: path.resolve(__dirname, 'src/assets/icons/icon.png')},
+        { from: path.resolve(__dirname, 'src/assets/icons/favicon.ico'), to: 'assets'},
+        { from: path.resolve(__dirname, 'src/assets/icons/icon.png'), to: 'assets'},
       ]
     }),
     new GenerateSW({

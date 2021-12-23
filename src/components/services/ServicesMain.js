@@ -1,7 +1,9 @@
 import React from 'react'
 
 import Grid from '../general/Grid'
-import homeDragon from '../../assets/img/red-dragon.png'
+import developing from '../../assets/img/developing.png'
+
+
 
 import Service from './Service'
 
@@ -13,7 +15,7 @@ export default class ServicesMain extends React.Component{
     return (
         <>
             <Grid title='Developing just what you need!' description={<p>From your mind to your desktop, tablet or phone...
-              <br />You can trust me and start focusing on growing your business!</p>} img={homeDragon} alt='Dragon logo' click={this.handleClick} button='Learn More'/>
+              <br />You can trust me and start focusing on growing your business!</p>} img={developing} alt='Dragon logo' click={this.handleClick} button='Learn More'/>
         </>
     )
   }
